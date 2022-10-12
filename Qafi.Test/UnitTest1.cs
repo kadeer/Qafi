@@ -154,6 +154,7 @@ public class Tests
         // user A transfers $25 from their account to 
         transferService.Transfer(userA, customerABankUser, 25);
 
+        // user A has $0 as their balance
         userA.Ledger?.Balance.Should().Be(0);
     }
 }
